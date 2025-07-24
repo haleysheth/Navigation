@@ -16,6 +16,9 @@ struct ContentView: View {
                     Text("Click Me!")
                 }
             }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
 
     }
