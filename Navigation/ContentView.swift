@@ -9,12 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-Text("This is the home page")
-                .font(.title3)
-                .fontWeight(.thin)
-
+        NavigationStack {
+            VStack{
+                Text("This is the root view.")
+                NavigationLink(destination: Text("You've arrive to the second view.") ) {
+                    Text("Click Me!")
+                }
+            }
         }
+
     }
 }
 
