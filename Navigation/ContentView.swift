@@ -16,11 +16,18 @@ struct ContentView: View {
                     Text("Click Me!")
                 }
             }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
+            .toolbar{
+                ToolbarItemGroup(placement:.status){
+                    
+                    NavigationLink(destination: SecondView()){
+                        Text("About")
+                    }
+                }
+//                    .navigationTitle("Home")
+//                    .navigationBarTitleDisplayMode(.inline)
+                //            .navigationBarHidden(true)
+            }
         }
-
     }
 }
 
